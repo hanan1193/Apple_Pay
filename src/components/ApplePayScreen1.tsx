@@ -1,14 +1,12 @@
 
-
 import React from 'react';
 import { Box, Typography, Paper, Avatar, IconButton } from '@mui/material';
 import AppleIcon from '@mui/icons-material/Apple';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import sideButton from '/sideButton.png';
 import CardItem from './CardItem';
-import cardItems from '../data/cardItems';
+import cardItems from '../data/cardItemsData';
 import type { ApplePayScreen1Props } from '../types';
-
 
 const ApplePayScreen1: React.FC<ApplePayScreen1Props> = ({ mode = 'light' }) => {
   const isDark = mode === 'dark';
@@ -17,7 +15,7 @@ const ApplePayScreen1: React.FC<ApplePayScreen1Props> = ({ mode = 'light' }) => 
     <Box
       sx={{
         width: 390,
-        height: 844,
+        height: 878, 
         borderRadius: '24px',
         overflow: 'hidden',
         boxShadow: 3,
@@ -170,4 +168,3 @@ const ApplePayScreen1: React.FC<ApplePayScreen1Props> = ({ mode = 'light' }) => 
 };
 
 export default ApplePayScreen1;
-

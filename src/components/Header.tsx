@@ -1,3 +1,4 @@
+
 import React from 'react';
 import {
   Stack,
@@ -9,36 +10,45 @@ import {
 import PaymentIcon from '@mui/icons-material/Payment';
 import { styled } from '@mui/material/styles';
 
+// Styled component for the icon container
 const HeaderIcon = styled(Box)(() => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  borderRadius: '50%', 
+  borderRadius: '40px',
   border: '1px solid #EBEBEB',
-  width: 32,
-  height: 32,
-  marginRight: 8,
+  width: 56,
+  height: 56,
+  marginRight: 20,
 }));
 
 const Header: React.FC = () => {
   return (
     <>
+      {/* Header section with icon, title, and external link */}
       <Stack
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        sx={{ width: '100%', padding: 2 }}
+        sx={{ width: '1500px'
+          , m: 4,
+
+        }}
       >
         <Box display="flex" alignItems="center">
           <HeaderIcon>
-            <PaymentIcon fontSize="small" sx={{ color: '#1C1C1E' }} />
+            <PaymentIcon fontSize="medium" sx={{ color: '#1C1C1E' }} />
           </HeaderIcon>
           <Typography
             sx={{
               fontFamily: 'SF Pro Display',
-              fontWeight: 600,
-              fontSize: '24px',
-              color: '#1C1C1E',
+              fontWeight: 900,
+              fontSize: '40px',
+              lineHeight: '100%',
+              letterSpacing: '0%',
+              verticalAlign: 'middle',
+              color: '#000000',
+              fontVariantNumeric: 'slashed-zero',
             }}
           >
             Apple Pay
@@ -54,12 +64,14 @@ const Header: React.FC = () => {
             color: '#1C1C1E',
             fontSize: '14px',
             fontWeight: 400,
+            width:'430px',
+            height:'24px',
           }}
         >
           Human Interface Guidelines: Apple Pay
         </Link>
       </Stack>
-      <Divider sx={{ my: 2 }} />
+      <Divider sx={{ m: 4,width:'1500px' }} />
     </>
   );
 };

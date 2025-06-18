@@ -13,6 +13,7 @@ const SideLabel: React.FC<SideLabelProps> = ({ themeType, label }) => {
           lineHeight: '24px',
           letterSpacing: '0.38px',
           verticalAlign: 'middle',
+          color:'#555555',
         }}
       >
         {themeType} / {label}

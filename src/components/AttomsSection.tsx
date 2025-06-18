@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, CssBaseline } from '@mui/material';
 import CardSection from './CardSection';
-import cardItems from '../data/cardItems';
+import cardItems from '../data/cardItemsData';
 import PaymentCard from './PaymentDetailsCard';
 import sideButtonImg from '../assets/sideButton.png';
 import fingerprintImg from '../assets/fingerprint.png';
@@ -16,7 +16,7 @@ const AttomsSection: React.FC = () => {
         gap: '32px',
         mt: '56px',
         position: 'relative',
-        ml: '20px',
+        ml: 4,
       }}
     >
       {/* First Box */}

@@ -10,7 +10,7 @@ const Section: React.FC<SectionTitleProps> = ({ name }) => {
             display: "flex",
             alignItems: "flex-start",
             mt: 5,
-            ml:'20px',
+            ml:4,
 
           }}
         >
@@ -26,7 +26,7 @@ const Section: React.FC<SectionTitleProps> = ({ name }) => {
           </Typography>
         </Box>
       </Stack>
-      <Divider sx={{ my: 3 }} />
+      <Divider sx={{ m: 4 ,width:'1500px'}} />
     </>
   );
 };

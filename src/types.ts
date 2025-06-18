@@ -29,7 +29,7 @@ export interface CardSectionProps {
 }
 export interface SideLabelProps {
   themeType: 'Light' | 'Dark';
-  label: string;
+  label?: string;
 }
 export interface PaymentCardProps {
   mode: 'light' | 'dark';

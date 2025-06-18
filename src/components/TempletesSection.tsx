@@ -5,7 +5,7 @@ import ApplePayScreen1 from './ApplePayScreen1';
 import ApplePayScreen2 from './ApplePayScreen2';
 import SideLabel from './SideLabel';
 
-const ApplePayScreen: React.FC = () => {
+const TempletesSection: React.FC = () => {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
       <Typography
@@ -51,10 +51,10 @@ const ApplePayScreen: React.FC = () => {
           height: 908,
           borderRadius: '16px',
           border: '1px dashed #7B61FF',
-          p: '32px',
+          p:30,
           gap: '32px',
-          overflowX: 'auto', 
-          overflowY: 'hidden',
+          width:'1690px',
+          ml:4,
         }}
       >
         {/* ApplePayScreen */}
@@ -69,4 +69,6 @@ const ApplePayScreen: React.FC = () => {
   );
 };
 
-export default ApplePayScreen;
+export default TempletesSection;
+
+

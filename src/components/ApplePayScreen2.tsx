@@ -6,7 +6,7 @@ import AppleIcon from '@mui/icons-material/Apple';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import fingerprint from '/fingerprint.png';
 import CardItem from './CardItem';
-import cardItems from '../data/cardItems';
+import cardItems from '../data/cardItemsData';
 import type { ApplePayScreen2Props } from '../types';
 
 
@@ -43,7 +43,6 @@ const ApplePayScreen2: React.FC<ApplePayScreen2Props> = ({ mode = 'light' }) => 
         }}
       />
 
-      {/* الشيت السفلي */}
       <Box
         sx={{
           position: 'absolute',

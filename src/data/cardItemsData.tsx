@@ -4,7 +4,7 @@ import appleCard from '/appleCard.png';
 import shipping from '/shipping.png';
 import PersonIcon from '@mui/icons-material/Person';
 
-const cardItems: CardData[] = [
+const cardItemsData: CardData[] = [
   {
     title: 'Contant',
     cardTitle: 'Apple Card',
@@ -43,4 +43,4 @@ const cardItems: CardData[] = [
   },
 ];
 
-export default cardItems;
+export default cardItemsData;

@@ -8,14 +8,14 @@ const VariantLabels: React.FC = () => {
       sx={{
         width: '208px',
         height: '920px',
-        position: 'absolute',
-        top: '80px', 
-        left: '550px',
+        top: '124px', 
+        left: '471px', 
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'flex-start', 
-        gap: 10, 
-        color: '#000000',
+         justifyContent: 'space-between', 
+        gap: 5, 
+        color: '#FFFFFF',
+        mt: 12,
       }}
     >
       <SideLabel themeType="Light" label="Apple Card" />
